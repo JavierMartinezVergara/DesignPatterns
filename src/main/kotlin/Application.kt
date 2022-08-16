@@ -7,6 +7,7 @@ import pattens.structural.adapter.AdapterImpl.charger
 import pattens.structural.adapter.AdapterImpl.usPowerOutlet
 import pattens.structural.adapter.toEUplug
 import pattens.structural.adapter.toUsbTypeC
+import pattens.structural.bridge.BrigdeImpl
 import pattens.structural.decorator.DecoratorImpl
 
 fun main() {
@@ -31,4 +32,7 @@ fun main() {
 
     // Adapter
     AdapterImpl.cellPhone(charger(usPowerOutlet().toEUplug()).toUsbTypeC())
+
+    // Bridge
+    BrigdeImpl.getStormTroopers()
 }
